@@ -16,3 +16,4 @@ RUN apt-get update
 
 RUN apt-get install -y --no-install-recommends \
     openjdk-7-jre-headless
+ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64/jre
