@@ -5,7 +5,7 @@ MAINTAINER Haroon Rafique https://github.com/hrafique
 
 # add community-maintained universe repository to sources
 RUN sed -i.bak 's/main$/main universe/' /etc/apt/sources.list
-RUN sed -e 's#quantal#quantal-updates#' /etc/apt/sources.list | \
+RUN sed -e 's#quantal#quantal-security#' /etc/apt/sources.list | \
     tee -a /etc/apt/sources.list
 
 # date packages were last updated
